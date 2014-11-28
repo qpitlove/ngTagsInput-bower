@@ -2,7 +2,7 @@
   "name": "ng-tags-input",
   "version": "2.1.1",
   "location": "https://github.com/qpitlove/ngTagsInput-bower.git",
-  "homepage": "http://mbenford.github.io/ngTagsInput",
+  "homepage": "https://github.com/qpitlove/ngTagsInput",
   "main": [
     "ng-tags-input.min.js",
     "ng-tags-input.min.css"
