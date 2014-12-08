@@ -5,7 +5,7 @@
  * Copyright (c) 2013-2014 Michael Benford
  * License: MIT
  *
- * Generated at 2014-12-08 18:03:43 +0900
+ * Generated at 2014-12-08 18:04:55 +0900
  */
 (function() {
 'use strict';
@@ -389,15 +389,15 @@ tagsInput.directive('tagsInput', ["$timeout","$document","tagsInputConfig", func
                     // non-ascii code ( 2byte more character unicode ) charecter input changing realize when keyup event happen.
                     // how to check simply input change is compare to scope.newTag.text and keyup input.val(), and IE also work.
                     // https://github.com/mbenford/ngTagsInput/pull/302
-                    var key = e.keyCode;
                     if( scope.newTag.text !== input.val() ){
-                        //scope.newTag.text = input.val();
-                        for(var prop in [KEYS.up, KEYS.down]){
-                            if( KEYS[prop] === key ){
-                                scope.newTag.text = input.val();
-                                break;
-                            }
-                        }
+//                        var key = e.keyCode;
+//                        //scope.newTag.text = input.val();
+//                        for(var prop in [KEYS.up, KEYS.down]){
+//                            if( KEYS[prop] === key ){
+//                                scope.newTag.text = input.val();
+//                                break;
+//                            }
+//                        }
                         events.trigger('input-change', input.val());
                     }
                 })
