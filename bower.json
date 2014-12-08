@@ -4,8 +4,8 @@
   "location": "https://github.com/qpitlove/ngTagsInput-bower.git",
   "homepage": "https://github.com/qpitlove/ngTagsInput",
   "main": [
-    "ng-tags-input.min.js",
-    "ng-tags-input.min.css"
+    "ng-tags-input.js",
+    "ng-tags-input.css"
   ],
   "description": "Tags input directive for AngularJS for patch keyup add",
   "dependencies": {
