@@ -5,7 +5,7 @@
  * Copyright (c) 2013-2014 Michael Benford
  * License: MIT
  *
- * Generated at 2014-11-29 01:51:28 +0900
+ * Generated at 2014-12-08 11:24:30 +0900
  */
 (function() {
 'use strict';
@@ -328,8 +328,7 @@ tagsInput.directive('tagsInput', ["$timeout","$document","tagsInputConfig", func
             };
 
             scope.newTagKeyup = function() {
-                scope.newTag.text = input.val();
-                events.trigger('input-change', scope.newTag.text);
+                events.trigger('input-change', input.val());
             };
 
             scope.newTagChange = function() {
